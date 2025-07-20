@@ -5,14 +5,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Título da Página</title>
 </head>
 <header>
-    <h1>começo</h1>
+    <h1>Bem-vindo!</h1>
+    <p>Este é o conteúdo inicial da sua página.</p>
 </header>
 <body>
-  <h1>Bem-vindo!</h1>
-  <p>Este é o conteúdo inicial da sua página.</p>
+  
+  {% block content %}
+  {% endblock %}
+  
 </body>
 </html>
