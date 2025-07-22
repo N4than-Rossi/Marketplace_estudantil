@@ -9,8 +9,10 @@
   <title>Título da Página</title>
 </head>
 <header>
-    <h1>Bem-vindo!</h1>
-    <p>Este é o conteúdo inicial da sua página.</p>
+    <a href="{{url_for('index')}}" class="logo-link">
+      <img src="{{url_for('static', filename='assets/images/tuts-icon.png')}}" alt="Tuts Logo Icon" height="60">
+      <span>Tuts</span>
+    </a>
 </header>
 <body>
   
