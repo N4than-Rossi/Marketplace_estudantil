@@ -27,12 +27,27 @@ header {
 
 
 
+/* Style do desc-tutor.html */
 .container-infogeraltutor {
   display: flex;
+  align-items: flex-start;
   background-color: #f4f5f6;
-  border-radius: 25%;
+  border-radius: 8px;
   box-shadow: 0px 4px 4px 0px;
 }
+
+.pilar_foto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pilar_foto img {
+  border-radius: 8px;
+}
+
+
+/* Fim do Style do desc-tutor.html */
 
 
 
