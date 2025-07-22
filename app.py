@@ -18,6 +18,9 @@ def show_cadastro():
 def add_cadastro():
   return redirect(url_for("index"))
 
+@app.get("/pf")
+def certo():
+  return render_template("perfilcerto.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
