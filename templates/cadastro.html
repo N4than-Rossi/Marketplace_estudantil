@@ -6,26 +6,24 @@
     <h2>Cadastro</h2>
     <div class="cadrasto-form">
         <form action="{{url_for('add_cadastro')}}" method="POST">
-            
+            <div class="cadastro-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="cadastro-nome" placeholder="Coloque seu nome">
+
+            </div>
+                <div class="cadastro-group">
+                <label for="nome">email</label>
+                <input type="text" id="cadastro-email" placeholder="Coloque seu email">
+
+            </div>
+                <div class="cadastro-group">
+                <label for="nome">senha</label>
+                <input type="text" id="cadastro-senha" placeholder="Coloque sua senha">
+            </div>
+            <button type="submit" class="submit-butoon">Entrar</button>
         </form>
-        <div class="cadastro-group">
-            <label for="nome">Nome</label>
-            <input type="text" id="cadastro-nome" placeholder="Enter the your name ">
-
-        </div>
-        <h2>Cadastro</h2>
-        <div class="cadastro-group">
-            <label for="nome">email</label>
-            <input type="text" id="cadastro-email" placeholder="Enter the your name ">
-
-        </div>
-        <h2>Cadastro</h2>
-        <div class="cadastro-group">
-            <label for="nome">senha</label>
-            <input type="text" id="cadastro-senha" placeholder="Enter the your name ">
-
-        </div>
-        <button type="submit" class="submit-butoon">Add</button>
+        
     </div>
+    <button type="submit" class="submit-butoon">Add</button>
 </div>
 {% endblock %}
