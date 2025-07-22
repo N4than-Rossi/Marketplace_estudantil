@@ -6,9 +6,13 @@ import csv
 
 app = Flask(__name__)
 
-app.route("/")
+@app.route("/")
 def index():
-  return render_template("home.html")
+  return render_template("index.html")
+
+@app.route("/add")
+def add_cadastro():
+  return render_template("cadastro.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
