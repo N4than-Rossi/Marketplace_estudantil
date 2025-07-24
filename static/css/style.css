@@ -316,3 +316,203 @@ margin-right: 100px;
 h1{
   margin-top: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imput-cadastro{
+  width: 80%;
+  border:none;
+  margin-left: 10px;
+  background-color: #38A3A5;
+}
+.imput-cadastro:focus{
+  outline: none;
+}
+.cadastro-group{
+  width: 100%;
+  background-color: #38A3A5;
+  border:2px solid #38A3A5 ;
+ display:flex;
+ border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 2px 10px;
+  color: white;
+
+  height: 40px;
+}
+
+.submit-buton{
+  padding: 10px 40px;
+  font-size: 20px;
+  border-color: #22577A;
+  border-radius: 30px;
+  margin-top: 30px;
+  background-color: #22577A;
+  color: white;
+
+}
+
+/* Style do desc-tutor.html */
+.container-infogeraltutor{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f4f5f6;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px;
+}
+
+.pilar_foto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pilar_foto img {
+  border-radius: 8px;
+}
+
+.pilar_foto li {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.pilar_informações {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.pilar_informações h2{
+    font-size: 36,5px;
+}
+
+.pilar_informações .nome_pag_descgeral p{
+    font-size: 19px;
+}
+
+.descrition_text p {
+    font-size: 27px;
+}
+
+/* Fim do Style do desc-tutor.html */
+
+/* Style do tutors.html */
+.container-tutores{
+    padding: 26px 20px;
+    max-width: 1020px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    row-gap: 40px;
+    column-gap: 60px;
+
+}
+.info-tutor {
+    background-color: #f4f5f6;
+    border: 1px solid #8d99ae;
+    border-radius: 12px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 3px 0px #d9d9d9;
+}
+
+.info-tutor img {
+    height: 251px;
+    width: 259px;
+    border-radius: 16px;
+}
+
+.info-tutor h3{
+    font-size: 25;
+}
+
+.info-tutor p{
+    font-size: 19;
+}
+/* Fim do style do tutors.html */
