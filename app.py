@@ -41,6 +41,11 @@ def add_cadastro():
 
   return redirect(url_for("index.html"))
 
+
+@app.get("/tutores")
+def show_tutores():
+  return render_template("tutores.html")
+
 @app.get("/pf")
 def certo():
   return render_template("perfilcerto.html")
