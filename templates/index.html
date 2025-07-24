@@ -1,48 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+{% extends "layout.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleindex.css')}}">
-  <title>Título da Página</title>
-</head>
-<header>
-    <a href="{{url_for('index')}}" class="logo-link">
-      <img src="{{url_for('static', filename='assets/images/tuts-icon.png')}}" alt="Tuts Logo Icon" height="60">
-      <span>Tuts</span>
-    </a>
-</header>
-
-<body>  
-    <div class = "container info">
-        <div class = "main text">
-            <h1> De </h1>
-            <h1> estudante </h1>
-            <h2> <i> PARA ESTUDANTE </i> </h2>
+{% block content %}
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lato" type="text/css"/>
+    <div class = "container-info">
+        <div class = "main-text">
+            <h1 class="h1-De">De <br> Estudante</h1>
+            <h1 class="h1-Pe">PARA ESTUDANTE</h1>
             <div class = "mini-desc">
-                <p> Um site pensado pra quem quer aprender sem custo e ensinar sem limites</p>
+                <p>Um site pensado pra quem quer aprender sem custo e ensinar sem limites.</p>
             </div>
         </div>
         <div class = "boxes-container">
             <div class = "big-box">
-                <div class = "titulo">
-                    <h1> TUTOR</h1>
-                </div>
+                <h1>TUTOR</h1>
                 <p> Desenvolva as suas habilidades comunicativas  enquanto consolida seu conhecimento.
 Após o cumprimento de requisitos, você poderá solicitar seu certificado de tutor diretamente da plataforma.</p>
-                <a href="{{ url_for('add_cadastro') }}"> <button> entrar como tutor </button> </a>
+                <a href="cadastro.html"> <button class="bt"> Entrar como tutor </button> </a>
             </div>
-
+</div> <div class = "boxes-container">
             <div class = "big-box">
-                <div class = "titulo">
-                    <h1> ESTUDANTE</h1>
-                </div>
+                <h1>ESTUDANTE</h1>
                 <p> Aprenda e reforce seus estudos gratuitamente com a nossa plataforma e descubra novas formas de entender os conteúdos mais difíceis. 
 Opte por aulas tanto presenciais quanto online, com tutores completamente selecionados por você.</p>
-                <a href="{{ url_for('show_tutores') }}"> <button> encontrar tutores </button> </a>
+                <a href="cadastro.html"> <button class="be"> Encontrar tutores </button> </a>
             </div>
         </div>
+
+
     </div>
 </body>
 </html>

@@ -1,5 +1,12 @@
 .container-tutores{
-    padding: auto;
+    padding: 26px 20px;
+    max-width: 1020px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    row-gap: 40px;
+    column-gap: 60px;
 
 }
 .info-tutor {
@@ -8,5 +15,19 @@
     border-radius: 12px;
     width: 200px;
     text-align: center;
-    box-shadow: 0px 4px 3px 0px #00000040;
+    box-shadow: 0px 4px 3px 0px #d9d9d9;
+}
+
+.info-tutor img {
+    height: 251px;
+    width: 259px;
+    border-radius: 16px;
+}
+
+.info-tutor h3{
+    font-size: 25;
+}
+
+.info-tutor p{
+    font-size: 19;
 }
