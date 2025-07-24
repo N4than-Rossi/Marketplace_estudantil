@@ -16,10 +16,10 @@ body {
 
 header {
     height: 150px;
-}
+
     background-color: #C7F9CC;
   color: #ffffff;
-  height: 80px;
+  height: 80px;}
 
 .container-info{
   display: flex;
@@ -34,7 +34,7 @@ header {
 .main-text h1{
   font-size: 98;
   font-family: lato;
-}
+
 width: 100%;
   padding: 0 15px;
   font-size: 73px;
