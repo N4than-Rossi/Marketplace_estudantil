@@ -47,7 +47,7 @@ header {
 
 .mini-desc{
     background-color: #C7F9CC;
-    border-radius: 25%;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -58,20 +58,22 @@ header {
 
 .titulo{
     background-color: #22577A;
-    border-radius: 25%;
+    border-radius: 8px;
 }
 
 .titulo h1{
     font-size: 51;
     font-family: Yeseva One;
     text-align: center;
+    color: white;
 }
 
 .big-box p{
     font-size: 23;
+    font-family: bree serif;
     text-align: center;
 }
 
 button{
-    border-radius: 50%;
+    border-radius: 15px;
 }
