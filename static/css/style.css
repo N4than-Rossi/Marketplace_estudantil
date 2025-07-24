@@ -97,6 +97,31 @@ flex-wrap: wrap;
 
 }
 .boxes-container {
+}
+
+/* -------------cadastro----------*/
+
+.cadastro-container{
+  margin: auto;
+  background-color: #57CC99;
+  border: 12px solid;
+  border-color: #22577A;
+  border-radius: 60px;
+  padding: 40px 92px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.cadastro-container h2{
+  font-family: chunckfive, Helvetica, sans-serif;
+  color: white;
+  font-size: 50px;
+}
+.boxes-container {
   width: 60%;
 }
 .perfil-foto-group{
