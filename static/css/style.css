@@ -80,21 +80,25 @@ header {
 /* -------------cadastro----------*/
 
 .cadastro-container{
-  margin: 40px 650px 40px 650px;
+  margin: auto;
   background-color: #57CC99;
   border: 12px solid;
   border-color: #22577A;
   border-radius: 60px;
-  padding: 92px;
+  padding: 40px 92px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
 
 .cadastro-container h2{
   font-family: chunckfive, Helvetica, sans-serif;
-  
-}.boxes-container {
+  color: white;
+  font-size: 50px;
+}
+.boxes-container {
   width: 60%;
 }
