@@ -1,6 +1,20 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-{% block content %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleindex.css')}}">
+  <title>Título da Página</title>
+</head>
+<header>
+    <a href="{{url_for('index')}}" class="logo-link">
+      <img src="{{url_for('static', filename='assets/images/tuts-icon.png')}}" alt="Tuts Logo Icon" height="60">
+      <span>Tuts</span>
+    </a>
+</header>
+
+<body>
     <div class="introdução">
         <h3> nessa pagina voce podera selecioar conteudos em que possuei duvidas para pooder ter apoio de outros estudandoptes ou até mesmo proficionais com doutorado na area.</h3>
     </div> 
@@ -33,5 +47,6 @@ Opte por aulas tanto presenciais quanto online, com tutores completamente seleci
 
 
     </div>
-{% endblock %}
+</body>
+</html>
 
