@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.get("/")
 def index():
-  return render_template("home.html")
+  return render_template("index.html")
 
 @app.get("/add")
 def show_cadastro():
@@ -39,7 +39,7 @@ def add_cadastro():
         writer = csv.writer(csv_file)
         writer.writerow(new_data)
 
-  return redirect(url_for("index"))
+  return redirect(url_for("index.html"))
 
 @app.get("/pf")
 def certo():
