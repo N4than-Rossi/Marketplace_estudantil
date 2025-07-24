@@ -1,13 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<<<<<<< HEAD
-    <div class="introdução">
-        <h3> nessa pagina voce podera selecioar conteudos em que possuei duvidas para pooder ter apoio de outros estudandoptes ou até mesmo proficionais com doutorado na area.</h3>
-    </div> 
-    <div class="escolha">
-        
-=======
+
     <div class = "container info">
         <div class = "main text">
             <h1> De </h1>
@@ -22,19 +16,18 @@
                 <h1> TUTOR</h1>
                 <p> Desenvolva as suas habilidades comunicativas  enquanto consolida seu conhecimento.
 Após o cumprimento de requisitos, você poderá solicitar seu certificado de tutor diretamente da plataforma.</p>
-                <a href="cadastro.html"> <button> entrar como tutor </button> </a>
+                <a href="{{url_for('add_cadastro')}}"> <button> entrar como tutor </button> </a>
             </div>
 
             <div class = "big box">
                 <h1> ESTUDANTE</h1>
                 <p> Aprenda e reforce seus estudos gratuitamente com a nossa plataforma e descubra novas formas de entender os conteúdos mais difíceis. 
 Opte por aulas tanto presenciais quanto online, com tutores completamente selecionados por você.</p>
-                <a href="cadastro.html"> <button> encontrar tutores </button> </a>
+                <a href="{{url_for('show_tutores')}}"> <button> encontrar tutores </button> </a>
             </div>
         </div>
 
 
->>>>>>> 110adea164035c3c9b3a1beb543d76af42ff0c92
     </div>
 {% endblock %}
 

@@ -48,3 +48,21 @@ header {
     box-sizing: 0px 4px 3px 0px #00000040;
 }
 
+/* -------------cadastro----------*/
+
+.cadastro-container{
+  margin: 40px 650px 40px 650px;
+  background-color: #57CC99;
+  border: 12px solid;
+  border-color: #22577A;
+  border-radius: 60px;
+  padding: 92px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.cadastro-container h2{
+  font-family: chunckfive, Helvetica, sans-serif;
+}
