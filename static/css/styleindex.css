@@ -43,6 +43,19 @@ header {
 
 /* Style do index.html */
 
+.container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .main text h1{
     font-size: 98;
     font-weight: 600;
@@ -53,5 +66,9 @@ header {
     font-size: 39;
     font-weight: 600;
     font-family: Lato;
+
+}
+
+.mini-desc{
 
 }
