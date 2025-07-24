@@ -1,0 +1,57 @@
+/* Style do desc-tutor.html */
+.container-infogeraltutor{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f4f5f6;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px;
+}
+
+.pilar_foto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pilar_foto img {
+  border-radius: 8px;
+}
+
+.pilar_foto li {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.pilar_informações {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.pilar_informações h2{
+    font-size: 36,5px;
+}
+
+.pilar_informações .nome_pag_descgeral p{
+    font-size: 19px;
+}
+
+.descrition_text p {
+    font-size: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fim do Style do desc-tutor.html */
