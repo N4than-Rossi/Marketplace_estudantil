@@ -39,7 +39,7 @@ def add_cadastro():
         writer = csv.writer(csv_file)
         writer.writerow(new_data)
 
-  return redirect(url_for("index.html"))
+  return redirect(url_for("index"))
 
 
 @app.get("/tutores")
