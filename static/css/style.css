@@ -75,17 +75,25 @@ header {
     width: 80%;
     text-align: center;
     box-sizing: 0px 4px 3px 0px #00000040;
-    margin: 200px 100px 100px 100px;
+    margin: 100px 200px;
      display: flex;              /* 1. Ativa o layout flexível */
   justify-content: space-between; /* 2. Distribui o espaço entre os itens */
   align-items: center;    
   flex-wrap: wrap;
   padding: 2%;
+  box-shadow: -17px 7px 0px -2px rgba(129, 129, 129, 0.75);
+-webkit-box-shadow: -17px 7px 0px -2px rgba(129, 129, 129, 0.75);
+-moz-box-shadow: -17px 7px 0px -2px rgba(129, 129, 129, 0.75);
  
 }
 .titulo{
   width: 100%;
 }
+.link-pa{
+  text-decoration: none;
+  color: inherit;
+}
+
 .foto{
   width: 20%;
  
@@ -125,7 +133,7 @@ background-color: #072e02;
     padding: 2px 10px;
 }
 #foto-url {
-  background-color: #072e02;
+  background-color: #57cc99;
     border: 1px solid #8d99ae;
     border-radius: 12px;
     width: 150px;
