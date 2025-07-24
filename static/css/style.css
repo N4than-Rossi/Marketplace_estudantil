@@ -69,12 +69,34 @@ header {
 /* ------------perfil---------- */
 
 .perfil-container{
-    background-color: #000000;
+    background-color: #f1f1f1;
     border: 1px solid #8d99ae;
     border-radius: 12px;
     width: 80%;
     text-align: center;
     box-sizing: 0px 4px 3px 0px #00000040;
+    margin: 200px 100px 100px 100px;
+     display: flex;              /* 1. Ativa o layout flexível */
+  justify-content: space-between; /* 2. Distribui o espaço entre os itens */
+  align-items: center;    
+  flex-wrap: wrap;
+  padding: 2%;
+ 
+}
+.titulo{
+  width: 100%;
+}
+.foto{
+  width: 20%;
+ 
+}
+.resto-perf{
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+
+}
+.boxes-container {
 }
 
 /* -------------cadastro----------*/
@@ -101,4 +123,37 @@ header {
 }
 .boxes-container {
   width: 60%;
+}
+.perfil-foto-group{
+background-color: #072e02;
+    border: 1px solid #8d99ae;
+    border-radius: 12px;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+}
+.imput-perf{
+  width: 80%;
+  border:none;
+  margin-left: 10px;
+}
+.imput-perf:focus{
+  outline: none;
+}
+.perfil-group{
+  width: 100%;
+  background-color: white;
+  border:2px solid #000000 ;
+ display:flex;
+ border-radius: 11.5px;
+  margin-bottom: 10px;
+    padding: 2px 10px;
+}
+#foto-url {
+  background-color: #072e02;
+    border: 1px solid #8d99ae;
+    border-radius: 12px;
+    width: 150px;
+    height: 200px;
+    text-align: center;
 }
