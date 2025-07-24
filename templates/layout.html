@@ -7,11 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
   <title>Título da Página</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lato" type="text/css"/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/horta" type="text/css"/>
 </head>
 <header>
     <a href="{{url_for('index')}}" class="logo-link">
-      <img src="{{url_for('static', filename='assets/images/tuts-icon.png')}}" alt="Tuts Logo Icon" height="60">
-      <span>Tuts</span>
+      <div>
+      <img src="{{url_for('static', filename='assets/images/Logo.png')}}" alt="Tuts Logo Icon" height="50">
+      </div>
+      <div class="a-in-div">
+        <a class="a-in">sing in</a>
+      <a class="a-in">log in</a>
+      </div>
+      
     </a>
 </header>
 <body>
