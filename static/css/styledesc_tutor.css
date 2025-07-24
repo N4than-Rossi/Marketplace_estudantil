@@ -19,8 +19,30 @@
 }
 
 .pilar_foto li {
-    
+    font-weight: 700;
+    font-size: 19px;
 }
+
+.pilar_informações {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.pilar_informações h2{
+    font-size: 36,5px;
+}
+
+.pilar_informações .nome_pag_descgeral p{
+    font-size: 19px;
+}
+
+.descrition_text p {
+    font-size: 27px;
+}
+
+
 
 
 
