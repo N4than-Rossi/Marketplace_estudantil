@@ -1,11 +1,20 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-{% block content %}
-    <div class="introdução">
-        <h3> nessa pagina voce podera selecioar conteudos em que possuei duvidas para pooder ter apoio de outros estudandoptes ou até mesmo proficionais com doutorado na area.</h3>
-    </div> 
-    <div class="escolha">
-        
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleindex.css')}}">
+  <title>Título da Página</title>
+</head>
+<header>
+    <a href="{{url_for('index')}}" class="logo-link">
+      <img src="{{url_for('static', filename='assets/images/tuts-icon.png')}}" alt="Tuts Logo Icon" height="60">
+      <span>Tuts</span>
+    </a>
+</header>
+
+<body>  
     <div class = "container info">
         <div class = "main text">
             <h1> De </h1>
@@ -17,21 +26,24 @@
         </div>
         <div class = "boxes-container">
             <div class = "big-box">
-                <h1> TUTOR</h1>
+                <div class = "titulo">
+                    <h1> TUTOR</h1>
+                </div>
                 <p> Desenvolva as suas habilidades comunicativas  enquanto consolida seu conhecimento.
 Após o cumprimento de requisitos, você poderá solicitar seu certificado de tutor diretamente da plataforma.</p>
-                <a href="cadastro.html"> <button> entrar como tutor </button> </a>
+                <a href="{{ url_for('add_cadastro') }}"> <button> entrar como tutor </button> </a>
             </div>
 
             <div class = "big-box">
-                <h1> ESTUDANTE</h1>
+                <div class = "titulo">
+                    <h1> ESTUDANTE</h1>
+                </div>
                 <p> Aprenda e reforce seus estudos gratuitamente com a nossa plataforma e descubra novas formas de entender os conteúdos mais difíceis. 
 Opte por aulas tanto presenciais quanto online, com tutores completamente selecionados por você.</p>
-                <a href="cadastro.html"> <button> encontrar tutores </button> </a>
+                <a href="{{ url_for('show_tutores') }}"> <button> encontrar tutores </button> </a>
             </div>
         </div>
-
-
     </div>
-{% endblock %}
+</body>
+</html>
 
