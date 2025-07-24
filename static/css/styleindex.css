@@ -29,12 +29,12 @@ header {
 
 .main-text h1{
   font-size: 98;
-  font-family: lato;
+  font-family: Lato;
 }
 
 .main-text h2{
   font-size: 39;
-  font-family: lato;
+  font-family: Lato;
 }
 
 .mini-desc{
@@ -70,5 +70,7 @@ header {
 }
 
 .mini-desc{
-
+    background-color: #C7F9CC;
+    border-radius: 25%;
+    text-align: center;
 }
