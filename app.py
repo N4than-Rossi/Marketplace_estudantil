@@ -10,10 +10,6 @@ app = Flask(__name__)
 def index():
   return render_template("index.html")
 
-@app.get("/login")
-def show_login():
-  return render_template("login.html")
-
 @app.get("/add")
 def show_cadastro():
   return render_template("cadastro.html")
@@ -43,11 +39,6 @@ def add_cadastro():
         writer = csv.writer(csv_file)
         writer.writerow(new_data)
 
-  with open("atual.csv", mode="r", encoding="utf-8") as csv_file:
-        reader = list(csv.reader(csv_file))
-
-
-
   return redirect(url_for("index"))
 
 
@@ -58,10 +49,6 @@ def show_tutores():
 @app.get("/pf")
 def certo():
   return render_template("perfilcerto.html")
-
-@app.get("/info-tutor")
-def show_info_tutor():
-  return render_template("desc_tutor.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
