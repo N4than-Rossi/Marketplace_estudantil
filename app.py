@@ -45,6 +45,7 @@ def add_cadastro():
         writer = csv.writer(csv_file)
         writer.writerow(new_data)
 
+  global logado
   logado = 1
 
   return redirect(url_for("index"))
