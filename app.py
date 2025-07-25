@@ -61,7 +61,7 @@ def certo():
 
 @app.get("/info-tutor")
 def show_info_tutor():
-  return render_templates("desc_tutor.html", logado = logado)
+  return render_template("desc_tutor.html", logado = logado)
 
 if __name__ == "__main__":
     app.run(debug=True)
