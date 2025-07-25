@@ -117,7 +117,7 @@ span{
     width: 80%;
     text-align: center;
     box-sizing: 0px 4px 3px 0px #00000040;
-    margin: 100px 200px;
+    margin: auto;
      display: flex;              /* 1. Ativa o layout flexível */
   justify-content: space-between; /* 2. Distribui o espaço entre os itens */
   align-items: center;    
@@ -134,6 +134,7 @@ span{
 .link-pa{
   text-decoration: none;
   color: inherit;
+  padding-left: 100px;
 }
 
 .foto{

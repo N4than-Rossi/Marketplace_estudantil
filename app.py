@@ -12,10 +12,6 @@ logado = 0
 def index():
   return render_template("index.html", logado = logado)
 
-@app.get("/login")
-def show_login():
-  return render_template("login.html")
-
 @app.get("/add")
 def show_cadastro():
   return render_template("cadastro.html")
@@ -57,10 +53,6 @@ def show_tutores():
 @app.get("/pf")
 def certo():
   return render_template("perfilcerto.html")
-
-@app.get("/info-tutor")
-def show_info_tutor():
-  return render_template("desc_tutor.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
