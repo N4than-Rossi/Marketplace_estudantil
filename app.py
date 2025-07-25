@@ -6,9 +6,11 @@ import csv
 
 app = Flask(__name__)
 
+logado = 0
+
 @app.get("/")
 def index():
-  return render_template("index.html")
+  return render_template("index.html", logado = logado)
 
 @app.get("/login")
 def show_login():
@@ -43,10 +45,7 @@ def add_cadastro():
         writer = csv.writer(csv_file)
         writer.writerow(new_data)
 
-  with open("atual.csv", mode="r", encoding="utf-8") as csv_file:
-        reader = list(csv.reader(csv_file))
-
-
+  logado = 1
 
   return redirect(url_for("index"))
 
