@@ -12,9 +12,13 @@ logado = 0
 def index():
   return render_template("index.html", logado = logado)
 
+@app.get("/login")
+def show_login():
+  return render_template("login.html", logado = logado)
+
 @app.get("/add")
 def show_cadastro():
-  return render_template("cadastro.html")
+  return render_template("cadastro.html", logado = logado)
 
 @app.post("/add")
 def add_cadastro():
@@ -48,11 +52,15 @@ def add_cadastro():
 
 @app.get("/tutores")
 def show_tutores():
-  return render_template("tutores.html")
+  return render_template("tutores.html", logado = logado)
 
 @app.get("/pf")
 def certo():
-  return render_template("perfilcerto.html")
+  return render_template("perfilcerto.html", logado = logado)
+
+@app.get("/info-tutor")
+def show_info_tutor():
+  return render_templates("desc_tutor.html", logado = logado)
 
 if __name__ == "__main__":
     app.run(debug=True)
